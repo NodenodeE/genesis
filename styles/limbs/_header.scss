@@ -1,0 +1,26 @@
+@use '../genetics' as *;
+
+header {
+  height: $height-header;
+  width: $width-navfoot;
+    div.header_cont {
+      width: $width-header;
+      height: $height-header;
+      @include h_father_flex;
+      div.header_fetus {
+        width: $half-father;
+        height: $full-father;
+        @include h_fetus_flex;
+        h4 {
+          @include h4;
+        }
+        h2 {
+          @include h2;
+        }
+        p {
+          @include p;
+        }
+      }
+  }
+}
+

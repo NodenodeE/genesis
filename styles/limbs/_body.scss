@@ -1,0 +1,9 @@
+@use '../genetics' as *;
+
+body {
+  font-family: $sans-serif;
+  font-weight: $normal;
+  background-color: $background-white;
+  @include body_flex;
+  @include body_reset;
+}

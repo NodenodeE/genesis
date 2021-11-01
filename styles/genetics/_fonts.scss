@@ -1,0 +1,40 @@
+// global font-family and weight//
+$sans-serif: 'Mulish';
+$normal: normal;
+
+@mixin bold {
+  line-height: 100%;
+  font-size: 100%;
+  letter-spacing: 35%;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+
+@mixin h2 {
+    font-size: 2.5em;
+    line-height: 150%;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+@mixin h3 {
+    line-height: 136%;
+    font-size: 1.75em;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+@mixin h4 {
+    line-height: 100%;
+    font-size:  1.375em;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+@mixin p {
+    line-height: 162%;
+    font-size: 1em;
+    letter-spacing: normal;
+    font-weight: normal;
+}

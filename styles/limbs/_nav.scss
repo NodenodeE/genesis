@@ -1,0 +1,23 @@
+@use '../genetics' as *;
+
+nav {
+  height: $height-navfoot;
+  width: $width-navfoot;
+  ul {
+    width: $width-navfoot;
+    height: $full-father;
+    @include nav_flex;
+    li {
+      width: $logo-width;
+      height: $half-father;
+      @include nav_links;
+      .logo {
+        width: $full-father;
+        height: $full-father;
+      }
+      a.bold {
+        @include bold;
+      }
+    }
+  }
+}

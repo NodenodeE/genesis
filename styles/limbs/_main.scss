@@ -1,0 +1,106 @@
+@use '../genetics' as *;
+
+main {
+  section.grid {
+    width: $width-main;
+    height: $height-main;
+    div.grid_father {
+      width: $width-main;
+      height: $height-main;
+      @include main_grid;
+      img.grid_fetus {
+        width: $half-father;
+     }
+    }
+  }
+  /* img.one {
+
+  }
+
+  img.two {
+
+  }
+
+  img.three {
+
+  }
+
+  img.four {
+
+  }
+
+  img.five {
+
+  }
+
+  img.six {
+
+  }
+
+  img.seven {
+
+  }
+
+  img.eight {
+
+  }
+
+  img.nine {
+
+  }
+
+  img.ten {
+
+  }
+
+  img.eleven {
+
+  }
+
+  img.twelve {
+
+  }*/
+}
+    // div.middle_father {
+    //     div {
+    //         h3 {
+
+    //         }
+    //     }
+
+        // div.linkgroup {
+        //     p {
+
+        //     }
+        // }
+    // }
+
+    // section.awards {
+    //     div.awwwards_father {
+    //         div {
+    //             h4 {
+
+    //             }
+    //         }
+
+    //     div.award_titles {
+    //         p.bold {
+
+    //         }
+    //     }
+
+    //     div.award_winningsamples {
+    //         div {
+    //         p {
+
+    //         }
+    //         }
+
+    //         div.award_year {
+    //         p {
+
+    //         }
+    //         }
+    //     }
+    //     }
+    // }
