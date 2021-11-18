@@ -1,26 +1,83 @@
 @use '../genetics' as *;
 
 header {
-  height: $height-header;
-  width: $width-navfoot;
-    div.header_cont {
-      width: $width-header;
-      height: $height-header;
-      @include h_father_flex;
-      div.header_fetus {
-        width: $half-father;
-        height: $full-father;
-        @include h_fetus_flex;
-        h4 {
-          @include h4;
-        }
-        h2 {
-          @include h2;
-        }
-        p {
-          @include p;
-        }
-      }
+  @include content_size
+}
+//
+///////////////// index page////////
+//////
+div.header_cont {
+  width: $full-father;
+  height: $full-father;
+  @include h_father_flex;
+
+  div.header_fetus {
+    @include h_fetus_flex;
+
+    h4 {
+      @include h4;
+    }
+
+    h2 {
+      @include h2;
+    }
+
+    .blue {
+      color: $font-blue;
+    }
+
+    p {
+      @include p;
+    }
   }
 }
+//
+////////////////// project page////////
+//////
+//
+///////////////// contact page////////
+//////
+section.contact_main {
+  @include contact_section;
+}
 
+div.contact_head {
+  @include body_reset;
+  @include contact_head;
+
+  h5 {
+    @include h5;
+  }
+
+  div.contact_text {
+    @include contact_text;
+  }
+//
+//the frame around the form//
+//
+  div.contact_form {
+  width: 50%;
+  }
+}
+//
+//the actual form//
+//
+form {
+  @include form;
+
+  input#name.input {
+    @include input;
+  }
+
+  input#email.input {
+    @include input;
+  }
+
+  input#message.input {
+    @include input;
+  }
+
+  button.btn {
+    @include button;
+  }
+}

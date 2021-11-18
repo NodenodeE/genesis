@@ -1,0 +1,35 @@
+
+@mixin form_flex {
+    width: 51vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1vw;
+}
+
+@mixin form {
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 30vh;
+}
+
+@mixin input {
+    border-bottom: 1px solid #979797;
+    opacity: 0.6;
+    width: 80%;
+    border-top: none;
+    border-inline: none;
+    background: transparent;
+    padding-bottom: 4%;
+    padding-left: 3%;
+    margin-bottom: 1%;
+    min-height: 2vh;
+    padding-top: 1%;
+}

@@ -1,15 +1,61 @@
 @use '../genetics' as *;
 
 footer {
-    width: $width-navfoot;
-    height: $height-navfoot;
-   // div.foot_father {
-     // ul {
-        //li {
-          //img {
+  width: $full-father;
+  height: $height-navfoot;
+  @include foot_father;
+
+  nav.navfoot {
+    height: $full-father;
+    width: 80%;
+    @include foot_flex
+    }
+}
 //
-        //  }
-//        }
-//      }
-//    }
+// logo in footer styling //
+//
+div.logo {
+  width: $logo-width;
+  height: $full-father;
+  @include logo_flex;
+
+  a {
+    img {
+      object-fit: none;
+    }
+  }
+}
+//
+// social media icons styling//
+//
+li.icons {
+  width: $logo-width;
+  height: $full-father;
+  @include icons_flex;
+
+  a.icons_link {
+    img.icons_social {
+      object-fit: none;
+    }
+  }
+}
+//
+// projects and contact links footer//
+//
+ul {
+  width: $full-father;
+  height: $full-father;
+  @include nav_fetus;
+  @include list-reset;
+
+  li {
+    width: $logo-width;
+    height: $full-father;
+    @include nav_links;
+    @include body_reset;
+
+    a.bold {
+      @include bold;
+    }
+  }
 }

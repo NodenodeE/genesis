@@ -5,36 +5,45 @@ $normal: normal;
 @mixin bold {
   line-height: 100%;
   font-size: 100%;
-  letter-spacing: 35%;
   font-weight: bolder;
   text-decoration: none;
   color: black;
 }
 
 @mixin h2 {
-    font-size: 2.5em;
-    line-height: 150%;
-    letter-spacing: normal;
+    font-size: 2em;
     font-weight: bold;
 }
 
 @mixin h3 {
-    line-height: 136%;
-    font-size: 1.75em;
-    letter-spacing: normal;
+    font-size: 3vw;
     font-weight: bold;
 }
 
 @mixin h4 {
     line-height: 100%;
     font-size:  1.375em;
-    letter-spacing: normal;
     font-weight: bold;
+    margin-top: 1vh;
+    min-width: 193px;
+}
+
+@mixin h5 {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw;
 }
 
 @mixin p {
-    line-height: 162%;
     font-size: 1em;
     letter-spacing: normal;
-    font-weight: normal;
+}
+
+@mixin winning_item {
+    margin-bottom: 1%;
+    max-width: 190px;
+    opacity: 0.6;
+    line-height: 26px;
+    margin-top: 1%;
 }

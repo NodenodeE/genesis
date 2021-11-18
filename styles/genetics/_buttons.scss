@@ -1,0 +1,14 @@
+@use '../genetics/colors' as *;
+
+@mixin button {
+    background-color: #4A4FF2;
+  color: #F2F2F2;
+  max-width: 40%;
+  width: 100%;
+  min-height: 5vh;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 1;
+  margin-top: 1vh;
+}

@@ -1,106 +1,218 @@
 @use '../genetics' as *;
 
+//
+//////// index page /////
+////
 main {
-  section.grid {
-    width: $width-main;
-    height: $height-main;
-    div.grid_father {
-      width: $width-main;
-      height: $height-main;
-      @include main_grid;
-      img.grid_fetus {
-        width: $half-father;
-     }
+  @include content_size;
+}
+
+section.grid {
+  width: $full-father;
+  height: $third-father;
+}
+
+div.grid_father {
+  height: $full-father;
+  width: $full-father;
+  @include main_grid;
+  
+  img.grid_fetus {
+    width: $full-father;
+    height: $full-father;
+    object-fit: cover;
+  }
+
+  img.grid_fetus.one {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 7;
+  }
+
+  img.grid_fetus.two {
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 6;
+  }
+
+  img.grid_fetus.three {
+    grid-column: 9 / span 4;
+    grid-row: 1 / span 10;
+  }
+
+  img.grid_fetus.four {
+    grid-column: 1 / span 4;
+    grid-row: 8 / span 8;
+  }
+
+  img.grid_fetus.five {
+    grid-column: 5 / span 4;
+    grid-row: 7 / span 7;
+  }
+
+  img.grid_fetus.six {
+    grid-column: 9 / span 4;
+    grid-row: 11 / span 7;
+  }
+
+  img.grid_fetus.seven {
+    grid-column: 1 / span 4;
+    grid-row: 16 / span 8;
+  }
+
+  img.grid_fetus.eight {
+    grid-column: 1 / span 4;
+    grid-row: 24 / span 8;
+  }
+
+  img.grid_fetus.nine {
+    grid-column: 5 / span 4;
+    grid-row: 23 / span 9;
+  }
+
+  img.grid_fetus.eleven {
+    grid-column: 5 / span 4;
+    grid-row: 14 / span 9;
+  }
+
+  img.grid_fetus.ten {
+    grid-column: 9 / span 4;
+    grid-row: 18 / span 8;
+  }
+
+  img.grid_fetus.twelve {
+    grid-column: 9 / span 4;
+    grid-row: 26 / span 6;
+  }
+}
+
+div.middle_father {
+  width: $full-father;
+  height: $height-middle;
+  margin-bottom: 6vh;
+  margin-top: 6vh;
+  @include middle_flex;
+
+  div.middle_bold {
+  width: 60%;
+  height: auto;
+    
+  h3 {
+    @include h3;
     }
   }
-  /* img.one {
 
+  div.linkgroup {
+    height: 60%;
+    width: 20%;
+    @include linkgroup_flex;
+
+    p {
+    @include p;
+    @include body_reset;
+    }
   }
-
-  img.two {
-
-  }
-
-  img.three {
-
-  }
-
-  img.four {
-
-  }
-
-  img.five {
-
-  }
-
-  img.six {
-
-  }
-
-  img.seven {
-
-  }
-
-  img.eight {
-
-  }
-
-  img.nine {
-
-  }
-
-  img.ten {
-
-  }
-
-  img.eleven {
-
-  }
-
-  img.twelve {
-
-  }*/
 }
-    // div.middle_father {
-    //     div {
-    //         h3 {
 
-    //         }
-    //     }
+section.awards {
+  width: $full-father;
+  border-top: 2px solid #D8D8D8;
+  border-bottom: 2px solid #D8D8D8;
+  @include awards_flex;
+}
 
-        // div.linkgroup {
-        //     p {
+div.awards_father {
+  width: $full-father;
+  border-bottom: 2px solid #D8D8D8;
+  @include awards_father;
 
-        //     }
-        // }
+  h4 {
+    @include h4;
+    }
+
+  div.award_titles {
+    @include awards_names;
+    @include awards_height;
+
+    p.bold {
+      @include bold;
+      margin-top: 1vh;
+      }
+    }
+
+  div.award_fetus {
+    @include awards_names;
+    min-height: 30vh;
+    margin-bottom: 0;
+  }
+}
+
+div.award_items {
+  @include awards_flex;
+  @include awards_height;
+
+  p.award_bold {
+    @include p;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    }
+
+    p {
+      @include p;
+      @include winning_item;
+    }
+}
+
+div.award_year {
+  @include awards_names;
+  @include awards_height;
+
+  p {
+    @include p;
+    @include winning_item;
+    }
+}
+//
+//////// projects page /////
+////
+div.project_fetus {
+  width: $full-father;
+
+  img.large_image {
+    width: $full-father;
+    height: $full-father;
+  }
+}
+
+div.project_text {
+  width: 79vw;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+div.three_images {
+  width: $full-father;
+  margin-bottom: 5vh;
+  div.father_three {
+    @include icons_flex;
+
+    img.bottom {
+    width: 25vw;
+    height: 40vh;
+    }
+  }
+}
+//
+//////// contact page /////
+////
+section.contact_father {
+  width: $full-father;
+  height: 40vh;
+  @include contact_father;
+
+  div.contact_fetus {
+    width: $full-father;
+    height: $full-father;
+    // .large_image {
     // }
-
-    // section.awards {
-    //     div.awwwards_father {
-    //         div {
-    //             h4 {
-
-    //             }
-    //         }
-
-    //     div.award_titles {
-    //         p.bold {
-
-    //         }
-    //     }
-
-    //     div.award_winningsamples {
-    //         div {
-    //         p {
-
-    //         }
-    //         }
-
-    //         div.award_year {
-    //         p {
-
-    //         }
-    //         }
-    //     }
-    //     }
-    // }
+  }
+}

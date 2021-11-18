@@ -1,23 +1,33 @@
 @use '../genetics' as *;
 
-nav {
-  height: $height-navfoot;
-  width: $width-navfoot;
-  ul {
-    width: $width-navfoot;
-    height: $full-father;
-    @include nav_flex;
-    li {
+header {
+  nav {
+    height: $height-navfoot;
+    width: $full-father;
+    @include nav_father;
+
+    div.logo {
       width: $logo-width;
-      height: $half-father;
-      @include nav_links;
-      .logo {
-        width: $full-father;
-        height: $full-father;
-      }
-      a.bold {
-        @include bold;
-      }
+      height: $full-father;
+      @include logo_flex;
+    }
+  }
+}
+
+ul {
+  width: $full-father;
+  height: $full-father;
+  @include nav_fetus;
+  @include list-reset;
+  
+  li {
+    width: $logo-width;
+    height: $full-father;
+    @include nav_links;
+    @include body_reset;
+    
+    a.bold {
+      @include bold;
     }
   }
 }
